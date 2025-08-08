@@ -1,0 +1,20 @@
+
+lista = ["arroz", "feijão", "macarrão"];
+
+console.log(lista)
+
+lista.push("arroz");
+lista[1]= "leite";
+lista.push("novo");
+console.log(lista);
+
+for(posicao = 0; posicao < lista.length; posicao++){
+    console.log(lista[posicao])
+}
+console.log("\n")
+for (item of lista){
+    console.log(item)
+}
+
+
+
