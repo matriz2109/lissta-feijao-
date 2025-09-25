@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>aprendendo API</title>
+
+
+        <style>
+            body{
+                background-color:rgb(17, 116, 201)
+
+            }
+            h1 {
+                text-align: center;
+                color: rgb(124, 180, 230);
+            }
+            ul{
+                display: flex;
+            }
+            ul il {
+                border: 1px solid black;
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1>lista de produtos</h1>
+        <ul id="productos"></ul>
+
+    </body>
+<script>
+    fetch("http://192.168.31.155:4000/products")
+    .then(res => res.json())
+    .then(data => {
+        const list = document.getElementById("produtos")
+        data.forEach(produtos=>{
+            const p =document.crearteElement("p")
+            p.textContent= produro.name+"rs"+ produtos.prince;
+
+            const img = document.createElementos("img")
+
+
+        })
+
+    })
+
+</script>
+</html>
